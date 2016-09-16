@@ -9,3 +9,10 @@ class Matriz(object):
 
 	def __str__(self):
 		return u'{0}'.format(self.data)
+
+	def color(self, x, y, color):
+		try:
+			self.data[x][y] = color
+			return color
+		except IndexError:
+			return False

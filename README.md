@@ -9,11 +9,12 @@ Comandos
 I M N
 Cria uma nova matriz MxN. Todos os pixels são brancos (O).
 
+L X Y C
+Colore um pixel de coordenadas (X,Y) na cor C.
+
 C
 Limpa a matriz. O tamanho permanece o mesmo. Todos os pixels ficam brancos (O).
 
-L X Y C
-Colore um pixel de coordenadas (X,Y) na cor C.
 
 V X Y1 Y2 C
 Desenha um segmento vertical na coluna X nas linhas de Y1 a Y2 (intervalo

@@ -1,5 +1,3 @@
-# -*- coding: utf8 -*-
-
 Explicação
 ----------
 Dada uma matriz de tamanho MxN na qual cada elemento represente um pixel, crie

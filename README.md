@@ -1,8 +1,5 @@
-# matriz
-# !/usr/bin/python
 # -*- coding: utf8 -*-
 
-"""
 Explicação
 ----------
 Dada uma matriz de tamanho MxN na qual cada elemento represente um pixel, crie
@@ -44,7 +41,7 @@ Escreve a imagem em um arquivo de nome name.
 X
 Encerra o programa.
 
-ConsideraÃ§Ãµes
+Considerações
 -------------
 Comandos diferentes de I, C, L, V, H, K, F, S e X devem ser ignorados
 
@@ -106,10 +103,3 @@ RRRRRRRRRR
 REEEEEEERR
 REEEEEEERR
 RRRRRRRRRR
-"""
-
-def main():
-    pass
-
-if __name__ == '__main__':
-    main()

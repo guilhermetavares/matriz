@@ -112,7 +112,9 @@ Para rodar os testes: ::
 
     python tests.py
 
-Coverage report: ::
+Com o ``coverage`` instalado: ::
+	
+	coverage run tests.py && coverage report
 
     Name        Stmts   Miss  Cover
 	-------------------------------

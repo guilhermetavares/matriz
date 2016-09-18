@@ -112,6 +112,14 @@ Para rodar os testes: ::
 
     python tests.py
 
+Coverage report: ::
+
+    Name        Stmts   Miss  Cover
+	-------------------------------
+	matriz.py      51      0   100%
+	tests.py       97      0   100%
+	-------------------------------
+	TOTAL         148      0   100%
 
 Para rodar o programa: ::
 

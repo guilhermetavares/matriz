@@ -6,6 +6,7 @@ from matriz import Matriz
 class MatrizTestCase(unittest.TestCase):
 
 	def test_01_create(self):
+		assert Matriz(1, 'c').data == []
 		M, N = 5, 6
 		assert Matriz(M, N).data == [['O'] * M for i in range(N)]
 

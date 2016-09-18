@@ -103,3 +103,16 @@ Testes
 	REEEEEEERR
 	REEEEEEERR
 	RRRRRRRRRR
+
+
+Utilização
+----------
+
+Para rodar os testes: ::
+
+    python tests.py
+
+
+Para rodar o programa: ::
+
+    python main.py

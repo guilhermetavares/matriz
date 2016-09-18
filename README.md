@@ -112,7 +112,7 @@ Para rodar os testes: ::
 
     python tests.py
 
-Com o ``coverage`` instalado: ::
+Com o ``coverage``[https://coverage.readthedocs.io/en/coverage-4.2/] instalado: ::
 	
 	coverage run tests.py && coverage report
 

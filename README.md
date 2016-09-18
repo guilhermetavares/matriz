@@ -46,8 +46,9 @@ Comandos diferentes de I, C, L, V, H, K, F, S e X devem ser ignorados
 Testes
 ------
 
-Entrada 01: ::
+01 Sequencia: ::
 
+	Entrada 01:
 	I 5 6
 	L 2 3 A
 	S one.bmp
@@ -76,8 +77,9 @@ Entrada 01: ::
 	JJJJJ
 	JJJJJ
 
-Entrada 02: ::
+02 Sequencia: ::
 
+	Entrada 02:
 	I 10 9
 	L 5 3 A
 	G 2 3 J

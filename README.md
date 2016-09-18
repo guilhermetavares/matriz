@@ -46,7 +46,7 @@ Comandos diferentes de I, C, L, V, H, K, F, S e X devem ser ignorados
 Testes
 ------
 
-01 Sequencia: ::
+01 Sequencia:
 
 	Entrada 01:
 	I 5 6
@@ -77,7 +77,7 @@ Testes
 	JJJJJ
 	JJJJJ
 
-02 Sequencia: ::
+02 Sequencia:
 
 	Entrada 02:
 	I 10 9

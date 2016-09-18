@@ -6,28 +6,24 @@ def run(matriz=None):
 	options = raw_input('Entrada:')
 	args = options.split(' ')
 	op = args[0]
+
+	params = list()
+	for a in args[1:]:
+		params.append(int(a) if a.isdigit() else a)
+
 	if op == 'I':
-		matriz = Matriz(int(args[1]), int(args[2]))
+		matriz = Matriz(*params)
 	elif op == 'X':
 		return
 	elif matriz:
-		if op == 'L':
-			matriz.color(int(args[1]), int(args[2]), args[3])
-		elif op == 'F':
-			matriz.region_draw(int(args[1]), int(args[2]), args[3])
-		elif op == 'S':
-			matriz.write(args[1])
-		elif op == 'V':
-			matriz.vertical_draw(int(args[1]), int(args[2]), int(args[3]), args[4])
-		elif op == 'H':
-			matriz.horizontal_draw(int(args[1]), int(args[2]), int(args[3]), args[4])
-		elif op == 'K':
-			matriz.retangular_draw(int(args[1]), int(args[2]), int(args[3]), int(args[4]), args[5])
-		elif op == 'C':
-			matriz.clean()
-	else:
-		print u'Entre apenas com os comandos: I, C, L, V, H, K, F, S e X'
-		run(matriz)
+		function = Matriz.FUNCTIONS.get(op, None)
+		if function:
+			try:
+				getattr(matriz, function)(*params)
+			except (TypeError, IndexError):
+				print u'Entre com as opções válidas de cada função'
+		else:
+			print u'Entre apenas com os comandos: I, C, L, V, H, K, F, S e X'
 	print matriz
 	run(matriz)
 

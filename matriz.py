@@ -3,6 +3,15 @@
 
 class Matriz(object):
 	data = []
+	FUNCTIONS = {
+		'L': 'color',
+		'F': 'region_draw',
+		'S': 'write',
+		'V': 'vertical_draw',
+		'H': 'horizontal_draw',
+		'K': 'retangular_draw',
+		'C': 'clean',
+	}
 	directions = (
 		(-1, -1), (-1, 0), (-1, 1),
 		(0, -1), (0, 0), (0, 1),   
@@ -55,7 +64,7 @@ class Matriz(object):
 		if original_color is None:
 			original_color = self.item(x, y)
 
-		if self.item(x, y) == original_color:
+		if self.item(x, y) and self.item(x, y) == original_color:
 			self.color(x, y, color)
 
 			for s_x, s_y in self.directions:

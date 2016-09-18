@@ -4,7 +4,7 @@ from matriz import Matriz
 
 def run(matriz=None):
 	options = raw_input('Entrada:')
-	args = options.split(' ')
+	args = options.strip().split(' ')
 	op = args[0]
 
 	params = list()
@@ -20,7 +20,7 @@ def run(matriz=None):
 		if function:
 			try:
 				getattr(matriz, function)(*params)
-			except (TypeError, IndexError):
+			except (ValueError, TypeError, IndexError):
 				print u'Entre com as opções válidas de cada função'
 		else:
 			print u'Entre apenas com os comandos: I, C, L, V, H, K, F, S e X'

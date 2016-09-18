@@ -19,9 +19,12 @@ class Matriz(object):
 	)
 	
 	def __init__(self, M, N):
-		self.M = M
-		self.N = N
-		self.clean()
+		try:
+			self.M = int(M)
+			self.N = int(N)
+			self.clean()
+		except ValueError:
+			self.data = []
 
 	def __str__(self):
 		return '\n'.join([''.join(i) for i in self.data])
